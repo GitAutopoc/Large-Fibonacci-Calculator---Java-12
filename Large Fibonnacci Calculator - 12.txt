@@ -1,0 +1,28 @@
+Compute Large Fibonacci Numbers with BigInteger
+Introduction:
+The Fibonacci sequence is a series of numbers where each number is the sum of the two preceding ones, typically starting with 0 and 1. This sequence has extensive applications in computer science, mathematics, and even in nature. Calculating Fibonacci numbers efficiently becomes challenging as the sequence grows, especially when dealing with very large indices.
+
+Objective:
+Your task is to create a Java class named LargeFibonacciCalculator that calculates the nth Fibonacci number using BigInteger. This class must efficiently compute the value using an iterative method to handle extremely large numbers that exceed standard data type limits.
+
+Function Requirements:
+
+Method Signature: public BigInteger calculateFibonacci(int n)
+Input: An integer n representing the position in the Fibonacci sequence.
+Output: Returns the nth Fibonacci number as a BigInteger.
+Exceptions: Throws an IllegalArgumentException if n is negative, with an appropriate error message.
+Specific Tasks:
+
+Implement the calculateFibonacci method to compute Fibonacci numbers iteratively to prevent stack overflow and manage large numbers efficiently.
+Include error handling within the method to manage negative inputs effectively.
+Ensure that the method handles edge cases such as n = 0 and n = 1 correctly.
+Sample Usage:
+
+calculateFibonacci(10) should return 55.
+calculateFibonacci(100) should return a BigInteger value of the 100th Fibonacci number.
+calculateFibonacci(-1) should throw an IllegalArgumentException with the message "Input must be a non-negative integer."
+Constraints:
+
+You should be able to compute at least the 10,000th Fibonacci number without performance degradation.
+The program should not use recursion due to stack overflow risks with high values of n.
+Focus on optimizing the function to handle large values of n efficiently.
